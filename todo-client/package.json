@@ -1,0 +1,9 @@
+{
+    "name": "todo-client",
+    "dependencies": {
+        "hotpocket-js-client": "0.5.3"
+    },
+    "scripts": {
+        "start": "node todo-client.js"
+    }
+}
