@@ -16,6 +16,7 @@ async function clientApp() {
 
     console.log('HotPocket Connected.');
     await client.submitContractInput(JSON.stringify({type:'ToDo', subType: 'GetToDoList'}));
+
     await client.submitContractInput(JSON.stringify({type:'ToDo', subType: 'AddToDoItem', data: {Name: 'Buy Milk', Description: 'Buy Milk from the store'}}));
 
     await client.submitContractInput(JSON.stringify({type:'ToDo', subType: 'GetToDoList'}));
@@ -27,7 +28,6 @@ async function clientApp() {
     await client.submitContractInput(JSON.stringify({type:'ToDo', subType: 'RemoveToDoItem', data: {Id: 5}}));
 
     await client.submitContractInput(JSON.stringify({type:'ToDo', subType: 'GetToDoList'}));
-
 
     client.on(HotPocket.events.contractOutput, (result) => {
         console.log("Received outputs:");
