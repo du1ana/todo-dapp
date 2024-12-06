@@ -19,7 +19,7 @@
 4. Stop the `hp-devkit` service when done:
    - Run `hpdevkit stop`.
 
-> **Note:** If you encounter any issues with `hp-devkit`, run the command `hpdevkit clean` to reset its state.
+> **Note:** Docker must be running when you try to run the smart contract. If you encounter any issues with `hp-devkit`, run the command `hpdevkit clean` to reset its state.
 
 ---
 
